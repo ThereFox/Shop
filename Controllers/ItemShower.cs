@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
         [Route("{index}")]
         public IActionResult Index(int index)
         {
-            return Json(12);
+            return View(12);
         }
     }
 }

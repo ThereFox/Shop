@@ -2,9 +2,9 @@
 
 namespace WebApplication1.Controllers
 {
-    public class Special : Controller
+    public class Home : Controller
     {
-        public IActionResult NotFoundPage()
+        public IActionResult Index()
         {
             return View();
         }

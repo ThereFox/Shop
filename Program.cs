@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using Microsoft.AspNetCore.Mvc.Razor.Compilation;
+using static System.Collections.Specialized.BitVector32;
+using WebApplication1.Models;
 
 namespace WebApplication1
 {
@@ -10,8 +12,10 @@ namespace WebApplication1
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddSingleton<IFilmDataSourse, FilmDatabase>();
+
             // Add services to the container.
-            builder.Services.AddMvc().AddRazorRuntimeCompilation().AddRazorRuntimeCompilation();
+            builder.Services.AddMvc().AddRazorRuntimeCompilation();
 
             var app = builder.Build();
 
@@ -30,15 +34,17 @@ namespace WebApplication1
 
             app.UseAuthorization();
 
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=NotFound}");
+
 
             app.MapControllerRoute(
-                name: "notFound",
+                name: "default",
+                pattern: "{controller}/{action}");
+
+            app.MapControllerRoute(
+            name: "NotFound",
                 pattern: "{*url}",
                 new { controller = "Special", action = "NotFoundPage" }
-                );
+            );
 
             app.Run();
         }

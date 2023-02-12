@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qcZNC3TiEsRMvj1uXD+mDbPCV2bPfn6hM1OO5zOEA4U=",
+  "Hash": "oiTh4dCX79l54B+qwdoTz+S2Qh9k+iZvqC9FmY2Vfpw=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -882,6 +882,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "F:\\C# learn\\.net system\\projects\\stor\\WebApplication1\\wwwroot\\lib\\img\\404Error.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C# learn\\.net system\\projects\\stor\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "lib/img/404Error.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\img\\404Error.jpg"
     },
     {
       "Identity": "F:\\C# learn\\.net system\\projects\\stor\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.js",

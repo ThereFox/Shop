@@ -5,7 +5,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    [Route("/Selector")]
+    [Route("Selector")]
     public class Selector : Controller
     {
         private readonly ILogger<Selector> _logger;
