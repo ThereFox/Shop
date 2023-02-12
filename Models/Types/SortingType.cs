@@ -1,6 +1,6 @@
 ﻿namespace WebApplication1.Models.Types
 {
-    public enum SortingType
+    public enum OrderType
     {
         ImdbReiting = 1,
         updateTime,
