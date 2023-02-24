@@ -1,6 +1,6 @@
-﻿using WebApplication1.Models.Types;
+﻿using WebApplication1.Models.DataSourses.Types;
 
-namespace WebApplication1.Models
+namespace WebApplication1.Models.Abstraction
 {
     public interface IFilmDataSourse
     {

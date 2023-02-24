@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Models.Types
+﻿namespace WebApplication1.Models.DataSourses.Types
 {
     public class FilmFiltr
     {

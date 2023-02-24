@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApplication1.Models
+namespace WebApplication1.Models.DataSourses.Types
 {
     [Table("Films")]
     [Index("Id")]
@@ -12,7 +12,7 @@ namespace WebApplication1.Models
         public int Id { get; set; }
         public byte[] Image { get; set; }
         [Required]
-        [MinLength(3),MaxLength(255)]
+        [MinLength(3), MaxLength(255)]
         public string Name { get; set; }
         public string Description { get; set; }
         public List<string> Tags { get; set; }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
+using WebApplication1.Models.Abstraction;
+using WebApplication1.Models.DataSourses.Types;
 
 namespace WebApplication1.Controllers
 {

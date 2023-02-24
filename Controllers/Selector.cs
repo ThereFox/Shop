@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
-using WebApplication1.Models;
-using WebApplication1.Models.Types;
+using WebApplication1.Models.Abstraction;
+using WebApplication1.Models.DataSourses.Types;
 
 namespace WebApplication1.Controllers
 {
@@ -19,8 +19,8 @@ namespace WebApplication1.Controllers
         [Route("/")]
         public IActionResult Index()
         {
-            _filmDataSource.GetFilms();
-            return View();
+            var films = _filmDataSource.GetFilms(50, 0);
+            return View(films);
         }
 
         [HttpPost]
